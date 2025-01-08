@@ -40,44 +40,142 @@
 // }
 // console.log(`undur jil ${x}`);
 
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //3 toonii hamgiin ihiig ol
-a = 2;
-b = 3;
-if (a > b) {
-  console.log(`${a}>${b}`);
-} else if (a < b) {
-  console.log(`${a}<${b}`);
-} else {
-  console.log(`${a}=${b}`);
-}
+// a = 2;
+// b = 3;
+// if (a > b) {
+//   console.log(`${a}>${b}`);
+// } else if (a < b) {
+//   console.log(`${a}<${b}`);
+// } else {
+//   console.log(`${a}=${b}`);
+// }
 
-c = 1;
-if (a > b && a > c) {
-  max = a;
-  if (b > c) {
-    mid = b;
-    min = c;
-  } else {
-    mid = c;
-    min = b;
-  }
-} else if (b > a && b > c) {
-  max = b;
-  if (a > c) {
-    mid = a;
-    min = c;
-  } else {
-    mid = c;
-    min = a;
-  }
-} else if (c > a && c > b) {
-  max = c;
-  if (a > b) {
-    mid = a;
-    min = b;
-  } else {
-    mid = b;
-    min = a;
-  }
+// c = 1;
+// if (a > b && a > c) {
+//   max = a;
+//   if (b > c) {
+//     mid = b;
+//     min = c;
+//   } else {
+//     mid = c;
+//     min = b;
+//   }
+// } else if (b > a && b > c) {
+//   max = b;
+//   if (a > c) {
+//     mid = a;
+//     min = c;
+//   } else {
+//     mid = c;
+//     min = a;
+//   }
+// } else if (c > a && c > b) {
+//   max = c;
+//   if (a > b) {
+//     mid = a;
+//     min = b;
+//   } else {
+//     mid = b;
+//     min = a;
+//   }
+// }
+// console.log(`${max}>${mid}>${min}`);
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//tegsh sondgoi oloh
+
+// let too = prompt("too oruul:");
+
+// if (too % 2 == 0) {
+//   alert(`${too} tegsh too bn`);
+// } else {
+//   alert(`${too} sondgoi too bn`);
+// }
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//dun tootsooloh
+
+// let dun = prompt("dun oruulna uu:");
+// let useg = 0;
+// if (100 >= dun && dun >= 0) {
+//   if (100 >= dun && dun >= 90) {
+//     useg = "A";
+//   } else if (89 >= dun && dun >= 80) {
+//     useg = "B";
+//   } else if (79 >= dun && dun >= 70) {
+//     useg = "C";
+//   } else if (69 >= dun && dun >= 60) {
+//     useg = "D";
+//   } else {
+//     useg = "F";
+//   }
+//   alert(`${dun} bol ${useg} `);
+// } else {
+//   alert(`${dun} bol dun bish bn `);
+// }
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//uliral ol
+
+// let uliral = prompt("sar oruul:");
+
+// if (11 >= uliral && uliral >= 9) {
+//   alert(`namar`);
+// } else if (8 >= uliral && uliral >= 6) {
+//   alert(`zun`);
+// } else if (5 >= uliral && uliral >= 3) {
+//   alert(`havar`);
+// } else {
+//   alert(`uvul`);
+// }
+
+//+++++++++++++++++++++++++++++++++++++++++
+// let u = prompt("month name:");
+// if (u == "december" || u == "january" || u == "february") {
+//   alert(`winter`);
+// } else if (u == "march" || u == "april" || u == "may") {
+//   alert(`spring`);
+// } else if (u == "june" || u == "july" || u == "august") {
+//   alert(`summer`);
+// } else if (u == "september" || u == "october" || u == "november") {
+//   alert(`autumn`);
+// } else {
+//   alert(`zuv oruul`);
+// }
+
+//++++++++++++++++++++++++++++++++++
+// let udur = prompt("udur oruul");
+// if (
+//   udur == "monday" ||
+//   udur == "tuesday" ||
+//   udur == "wednesday" ||
+//   udur == "thursday" ||
+//   udur == "friday"
+// ) {
+//   alert(`weekday`);
+// } else if (udur == "saturday" || udur == "sunday") {
+//   alert(`weekend`);
+// } else {
+//   alert(`zuv oruul`);
+// }
+
+//++++++++++++++++++++++++++++++++
+let sar = prompt(`sar oruul`);
+let u = sar.toLowerCase();
+if (
+  u == "december" ||
+  u == "january" ||
+  u == "march" ||
+  u == "may" ||
+  u == "july" ||
+  u == "august" ||
+  u == "october"
+) {
+  alert(`${u} has 31 days`);
+} else if (u == "april" || u == "june" || u == "september" || u == "november") {
+  alert(`${su} has 30 days`);
+} else if (u == "february") {
+  alert(`${u} has 28 days`);
 }
-console.log(`${max}>${mid}>${min}`);
