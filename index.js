@@ -162,20 +162,118 @@
 // }
 
 //++++++++++++++++++++++++++++++++
-let sar = prompt(`sar oruul`);
-let u = sar.toLowerCase();
-if (
-  u == "december" ||
-  u == "january" ||
-  u == "march" ||
-  u == "may" ||
-  u == "july" ||
-  u == "august" ||
-  u == "october"
-) {
-  alert(`${u} has 31 days`);
-} else if (u == "april" || u == "june" || u == "september" || u == "november") {
-  alert(`${su} has 30 days`);
-} else if (u == "february") {
-  alert(`${u} has 28 days`);
+// let sar = prompt(`sar oruul`);
+// let u = sar.toLowerCase();
+// if (
+//   u == "december" ||
+//   u == "january" ||
+//   u == "march" ||
+//   u == "may" ||
+//   u == "july" ||
+//   u == "august" ||
+//   u == "october"
+// ) {
+//   alert(`${u} has 31 days`);
+// } else if (u == "april" || u == "june" || u == "september" || u == "november") {
+//   alert(`${su} has 30 days`);
+// } else if (u == "february") {
+//   alert(`${u} has 28 days`);
+// }
+
+//+++++++++++++++++++++++++++++++++
+const name = prompt("ner:");
+alert("snu, " + name + "! niit 5 asuulttai, amjilt husie");
+let result = "";
+let tool = 0;
+const neg = prompt("Торхон дотоp тос ус хоёр ter yu ve?");
+switch (neg) {
+  case "undug":
+    alert("zuv!");
+    result += "1d zuv, ";
+    tool++;
+    break;
+  default:
+    alert("buruu! undug bailaa");
+    result += "1d buruu, ";
+    break;
+}
+
+alert("za daraagiin onisgond belen u!?");
+const hoyr = prompt("Нам нам гүйдэлтэй Навчин шар дээлтэй ter yu ve?");
+switch (hoyr) {
+  case "uneg":
+    alert("zuv!");
+    result += "2d zuv, ";
+    tool++;
+    break;
+  default:
+    alert("buruu! uneg bailaa");
+    result += "2d buruu, ";
+    break;
+}
+
+alert("odoo 3dah n shu faitoooo!");
+const gurav = prompt("Ганган хүүхэн Ганцаар явах заяатай ter yu ve?");
+switch (gurav) {
+  case "uneg":
+    alert("zuv!");
+    result += "3d zuv, ";
+    tool++;
+    break;
+  default:
+    alert("buruu! dahiad l uneg bailaa");
+    result += "3d buruu, ";
+    break;
+}
+
+alert("odoo udku duusnaa");
+const duruv = prompt("Сэтгэр байтлаа Шантгар ter yu ve?");
+switch (duruv) {
+  case "gahai":
+    alert("zuv!");
+    result += "4d zuv, ";
+    tool++;
+    break;
+  default:
+    alert("buruu! gahai bailaa");
+    result += "4d buruu, ";
+    break;
+}
+
+alert("za suuliinh shu ");
+const tav = prompt(
+  "Бөхийн зогсвол хүн шиг Бөгцийн суувал нохой шиг/ ter yu ve?"
+);
+switch (tav) {
+  case "sarmagchin":
+    alert("zuv!");
+    result += "5d zuv hariuljee";
+    tool++;
+    break;
+  default:
+    alert("buruu! sarmagchin baisiimaa");
+    result += "5d buruu hariuljee";
+    break;
+}
+alert(name + ` ta ${result}`);
+switch (tool) {
+  case 1:
+    alert("ydaj 1 zuv hariulttai, hoosongui shu");
+    break;
+  case 2:
+    alert("yhvee zgr2");
+    break;
+  case 3:
+    alert("muugui shu");
+    break;
+  case 4:
+    alert("good!");
+    break;
+  case 5:
+    alert("neg ch aldahgu sn yumbe");
+    break;
+
+  default:
+    alert("neg ch zuv hariulaagu muu yumbe");
+    break;
 }
