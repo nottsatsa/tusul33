@@ -181,99 +181,138 @@
 // }
 
 //+++++++++++++++++++++++++++++++++
-const name = prompt("ner:");
-alert("snu, " + name + "! niit 5 asuulttai, amjilt husie");
-let result = "";
-let tool = 0;
-const neg = prompt("Торхон дотоp тос ус хоёр ter yu ve?");
-switch (neg) {
-  case "undug":
-    alert("zuv!");
-    result += "1d zuv, ";
-    tool++;
-    break;
-  default:
-    alert("buruu! undug bailaa");
-    result += "1d buruu, ";
-    break;
-}
+// const name = prompt("ner:");
+// alert("snu, " + name + "! niit 5 asuulttai, amjilt husie");
+// let result = "";
+// let tool = 0;
+// const neg = prompt("Торхон дотоp тос ус хоёр ter yu ve?");
+// switch (neg) {
+//   case "undug":
+//     alert("zuv!");
+//     result += "1d zuv, ";
+//     tool++;
+//     break;
+//   default:
+//     alert("buruu! undug bailaa");
+//     result += "1d buruu, ";
+//     break;
+// }
 
-alert("za daraagiin onisgond belen u!?");
-const hoyr = prompt("Нам нам гүйдэлтэй Навчин шар дээлтэй ter yu ve?");
-switch (hoyr) {
-  case "uneg":
-    alert("zuv!");
-    result += "2d zuv, ";
-    tool++;
-    break;
-  default:
-    alert("buruu! uneg bailaa");
-    result += "2d buruu, ";
-    break;
-}
+// alert("za daraagiin onisgond belen u!?");
+// const hoyr = prompt("Нам нам гүйдэлтэй Навчин шар дээлтэй ter yu ve?");
+// switch (hoyr) {
+//   case "uneg":
+//     alert("zuv!");
+//     result += "2d zuv, ";
+//     tool++;
+//     break;
+//   default:
+//     alert("buruu! uneg bailaa");
+//     result += "2d buruu, ";
+//     break;
+// }
 
-alert("odoo 3dah n shu faitoooo!");
-const gurav = prompt("Ганган хүүхэн Ганцаар явах заяатай ter yu ve?");
-switch (gurav) {
-  case "uneg":
-    alert("zuv!");
-    result += "3d zuv, ";
-    tool++;
-    break;
-  default:
-    alert("buruu! dahiad l uneg bailaa");
-    result += "3d buruu, ";
-    break;
-}
+// alert("odoo 3dah n shu faitoooo!");
+// const gurav = prompt("Ганган хүүхэн Ганцаар явах заяатай ter yu ve?");
+// switch (gurav) {
+//   case "uneg":
+//     alert("zuv!");
+//     result += "3d zuv, ";
+//     tool++;
+//     break;
+//   default:
+//     alert("buruu! dahiad l uneg bailaa");
+//     result += "3d buruu, ";
+//     break;
+// }
 
-alert("odoo udku duusnaa");
-const duruv = prompt("Сэтгэр байтлаа Шантгар ter yu ve?");
-switch (duruv) {
-  case "gahai":
-    alert("zuv!");
-    result += "4d zuv, ";
-    tool++;
-    break;
-  default:
-    alert("buruu! gahai bailaa");
-    result += "4d buruu, ";
-    break;
-}
+// alert("odoo udku duusnaa");
+// const duruv = prompt("Сэтгэр байтлаа Шантгар ter yu ve?");
+// switch (duruv) {
+//   case "gahai":
+//     alert("zuv!");
+//     result += "4d zuv, ";
+//     tool++;
+//     break;
+//   default:
+//     alert("buruu! gahai bailaa");
+//     result += "4d buruu, ";
+//     break;
+// }
 
-alert("za suuliinh shu ");
-const tav = prompt(
-  "Бөхийн зогсвол хүн шиг Бөгцийн суувал нохой шиг/ ter yu ve?"
-);
-switch (tav) {
-  case "sarmagchin":
-    alert("zuv!");
-    result += "5d zuv hariuljee";
-    tool++;
-    break;
-  default:
-    alert("buruu! sarmagchin baisiimaa");
-    result += "5d buruu hariuljee";
-    break;
-}
-alert(name + ` ta ${result}`);
-switch (tool) {
-  case 1:
-    alert("ydaj 1 zuv hariulttai, hoosongui shu");
-    break;
-  case 2:
-    alert("yhvee zgr2");
-    break;
-  case 3:
-    alert("muugui shu");
-    break;
-  case 4:
-    alert("good!");
-    break;
-  case 5:
-    alert("neg ch aldahgu sn yumbe");
-    break;
+// alert("za suuliinh shu ");
+// const tav = prompt(
+//   "Бөхийн зогсвол хүн шиг Бөгцийн суувал нохой шиг/ ter yu ve?"
+// );
+// switch (tav) {
+//   case "sarmagchin":
+//     alert("zuv!");
+//     result += "5d zuv hariuljee";
+//     tool++;
+//     break;
+//   default:
+//     alert("buruu! sarmagchin baisiimaa");
+//     result += "5d buruu hariuljee";
+//     break;
+// }
+// alert(name + ` ta ${result}`);
+// switch (tool) {
+//   case 1:
+//     alert("ydaj 1 zuv hariulttai, hoosongui shu");
+//     break;
+//   case 2:
+//     alert("yhvee zgr2");
+//     break;
+//   case 3:
+//     alert("muugui shu");
+//     break;
+//   case 4:
+//     alert("good!");
+//     break;
+//   case 5:
+//     alert("neg ch aldahgu sn yumbe");
+//     break;
 
-  default:
-    alert("neg ch zuv hariulaagu muu yumbe");
-    break;
+//   default:
+//     alert("neg ch zuv hariulaagu muu yumbe");
+//     break;
+// }
+
+// //+++++++++++++++++++++++++++++++++++++++++++++++++
+// let urjver = 1;
+// let too = 0;
+// const n = prompt("n :");
+// const x = prompt("x :");
+// for (let i = 1; i <= n; i++) {
+//   too += `${i}, `;
+//   if (i % x == 0) {
+//     urjver = urjver * i;
+//   }
+// }
+// alert(`n hurtelh too: ${too} %x urjver: ${urjver}`);
+
+// //+++++++++++++++++++++++++++++++++++++++++++++++++
+const n = prompt("n :");
+let notprime = 0;
+let prime = 0;
+let hevle = "";
+for (let i = 2; i <= n; i++) {
+  if (i == 2 || i == 3 || i == 5 || i == 7 || i == 11) {
+    prime++;
+    hevle += `${i}, `;
+  } else if (
+    i % 2 == 0 ||
+    i % 3 == 0 ||
+    i % 5 == 0 ||
+    i % 11 == 0 ||
+    i % 49 == 0 ||
+    i % 91 == 0
+  ) {
+    notprime++;
+  } else {
+    prime++;
+    hevle += `${i}, `;
+  }
 }
+alert(` 1-${n} hurtel ${prime} anhnii too bn`);
+alert(`anhnii toonuud n: ${hevle}`);
