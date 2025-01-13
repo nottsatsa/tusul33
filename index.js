@@ -292,27 +292,53 @@
 // alert(`n hurtelh too: ${too} %x urjver: ${urjver}`);
 
 // //+++++++++++++++++++++++++++++++++++++++++++++++++
-const n = prompt("n :");
-let notprime = 0;
-let prime = 0;
+//prime number olno
+// const n = prompt("n :");
+// let notprime = 0;
+// let prime = 0;
+// let hevle = "";
+// for (let i = 2; i <= n; i++) {
+//   if (i == 2 || i == 3 || i == 5 || i == 7 || i == 11) {
+//     prime++;
+//     hevle += `${i}, `;
+//   } else if (
+//     i % 2 == 0 ||
+//     i % 3 == 0 ||
+//     i % 5 == 0 ||
+//     i % 11 == 0 ||
+//     i % 49 == 0 ||
+//     i % 91 == 0
+//   ) {
+//     notprime++;
+//   } else {
+//     prime++;
+//     hevle += `${i}, `;
+//   }
+// }
+// alert(` 1-${n} hurtel ${prime} anhnii too bn`);
+// alert(`anhnii toonuud n: ${hevle}`);
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++
+// let str = "Hello";
+// let hevle = "";
+// for (let i = str.length - 1; i >= 0; i--) {
+//   console.log(str[i]);
+//   hevle += `${str[i]}`;
+// }
+// console.log(hevle);
+
+// // let reversed = [...str].reverse().join("");
+// // console.log(reversed);
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++
 let hevle = "";
-for (let i = 2; i <= n; i++) {
-  if (i == 2 || i == 3 || i == 5 || i == 7 || i == 11) {
-    prime++;
-    hevle += `${i}, `;
-  } else if (
-    i % 2 == 0 ||
-    i % 3 == 0 ||
-    i % 5 == 0 ||
-    i % 11 == 0 ||
-    i % 49 == 0 ||
-    i % 91 == 0
-  ) {
-    notprime++;
-  } else {
-    prime++;
-    hevle += `${i}, `;
+for (let i = 0; i <= 5; i++) {
+  for (let j = 1; j <= 5 - i; j++) {
+    hevle += ` `;
   }
+  for (let j = 1; j <= i; j++) {
+    hevle += `*`;
+  }
+  console.log(hevle);
+  hevle = "";
 }
-alert(` 1-${n} hurtel ${prime} anhnii too bn`);
-alert(`anhnii toonuud n: ${hevle}`);
