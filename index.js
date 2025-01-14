@@ -330,15 +330,111 @@
 // // let reversed = [...str].reverse().join("");
 // // console.log(reversed);
 
+// //++++++++++++++++++++++++++++++++++++++++++++++++++
+//     *
+//    **
+//   ***
+//  ****
+// *****
+
+// let hevle = "";
+// for (let i = 0; i <= 5; i++) {
+//   for (let j = 1; j <= 5 - i; j++) {
+//     hevle += ` `;
+//   }
+//   for (let j = 1; j <= i; j++) {
+//     hevle += `*`;
+//   }
+//   console.log(hevle);
+//   hevle = "";
+// }
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++
+// *****
+//  ****
+//   ***
+//    **
+//     *
+
+// let hevle = "";
+// for (let i = 0; i <= 5; i++) {
+//   for (let j = 0; j <= i - 1; j++) {
+//     hevle += ` `;
+//   }
+//   for (let j = 1; j <= 5 - i; j++) {
+//     hevle += `*`;
+//   }
+//   console.log(hevle);
+//   hevle = "";
+// }
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++
+// *****
+// ****
+// ***
+// **
+// *
+
+// let hevle = "";
+// for (let i = 0; i <= 5; i++) {
+//   for (let j = 1; j <= 5 - i; j++) {
+//     hevle += `*`;
+//   }
+//   console.log(hevle);
+//   hevle = "";
+// }
+
+// //++++++++++++++++++++++++++++++++++++++++++++++++++
+//     *
+//    **
+//   ***
+//  ****
+// *****
+
+// let hevle = " ";
+// for (let i = 0; i <= 5; i++) {
+//   for (let j = 1; j <= 5 - i; j++) {
+//     hevle += ` `;
+//   }
+//   for (let j = 1; j <= i * 2 + 1; j++) {
+//     hevle += `*`;
+//   }
+//   console.log(hevle);
+//   hevle = " ";
+// }
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// let hevle = " ";
+// for (let i = 1; i <= 4; i++) {
+//   if (i == 1 || i == 4) {
+//     for (let j = 1; j <= 4; j++) {
+//       hevle += ` *`;
+//     }
+//   } else {
+//     hevle += " *";
+//     for (let k = 0; k < 2; k++) {
+//       hevle += "  ";
+//     }
+//     hevle += " *";
+//   }
+
+//   console.log(hevle);
+//   hevle = " ";
+// }
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++
 let hevle = "";
-for (let i = 0; i <= 5; i++) {
-  for (let j = 1; j <= 5 - i; j++) {
-    hevle += ` `;
-  }
-  for (let j = 1; j <= i; j++) {
-    hevle += `*`;
+let column = 8;
+let row = 10;
+for (let i = 1; i <= row; i++) {
+  hevle = "";
+  for (let k = 1; k <= column; k++) {
+    if (i == 1 || i == row || k == 1 || k == column) {
+      hevle += `*`;
+    } else {
+      hevle += " ";
+    }
   }
   console.log(hevle);
-  hevle = "";
 }
