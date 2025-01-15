@@ -424,17 +424,83 @@
 // }
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++
-let hevle = "";
-let column = 8;
-let row = 10;
-for (let i = 1; i <= row; i++) {
-  hevle = "";
-  for (let k = 1; k <= column; k++) {
-    if (i == 1 || i == row || k == 1 || k == column) {
-      hevle += `*`;
-    } else {
-      hevle += " ";
-    }
-  }
-  console.log(hevle);
+// let hevle = "";
+// let column = 8;
+// let row = 10;
+// for (let i = 1; i <= row; i++) {
+//   hevle = "";
+//   for (let k = 1; k <= column; k++) {
+//     if (i == 1 || i == row || k == 1 || k == column) {
+//       hevle += `*`;
+//     } else {
+//       hevle += " ";
+//     }
+//   }
+//   console.log(hevle);
+// }
+
+//++++++++++++++++++++++++++++++++++++++++++++
+//1-100 sondgoi niilber
+// let sum = 0;
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 2 == 1) {
+//     sum += i;
+//   }
+// }
+// console.log(`1-100 sondgoi niilber= ${sum}`);
+
+// //hello world tegsh index tom usgeer
+// let str = "hello world!";
+// let hevle = "";
+// let tom = 0;
+// for (let i = 0; i < str.length; i++) {
+//   // console.log(str[i]);
+//   if (i % 2 == 0) {
+//     tom = str[i].toUpperCase();
+//     hevle += `${tom}`;
+//   } else {
+//     hevle += `${str[i]}`;
+//   }
+// }
+// console.log(hevle);
+
+// //palindrome too shalga
+// let p = "123521";
+// let urd = 0,
+//   hoid = 0;
+// for (let i = 0; i < p.length; i++) {
+//   urd += `${p[i]}`;
+// }
+// for (let i = p.length - 1; i >= 0; i--) {
+//   hoid += p[i];
+// }
+// console.log(hoid);
+// if (hoid == urd) {
+//   console.log(`${p} bol palindrome`);
+// } else {
+//   console.log(`${p} bol palindrome bish`);
+// }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// let tsuvaa = [1, 2, 3, 4, 5, 6, 7];
+// let sum = 0;
+// for (let i = 0; i < tsuvaa.length; i++) {
+//   console.log(tsuvaa[i] * 2);
+//   sum += tsuvaa[i] * 2;
+// }
+// tsuvaa.push(sum);
+// console.log(tsuvaa, "array");
+
+//++++++++++++++++++++++++++++++++++++++
+let fruits = ["apple", "banana", "cherry", "date"];
+console.log(fruits[0]);
+console.log(fruits[2]);
+
+fruits.push("elderberry");
+fruits[1] = "blueberry";
+console.log(fruits);
+
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
 }
