@@ -492,15 +492,30 @@
 // tsuvaa.push(sum);
 // console.log(tsuvaa, "array");
 
-//++++++++++++++++++++++++++++++++++++++
-let fruits = ["apple", "banana", "cherry", "date"];
-console.log(fruits[0]);
-console.log(fruits[2]);
+// 1/15++++++++++++++++++++++++++++++++++++++
+// let fruits = ["apple", "banana", "cherry", "date"];
+// console.log(fruits[0]);
+// console.log(fruits[2]);
 
-fruits.push("elderberry");
-fruits[1] = "blueberry";
-console.log(fruits);
+// fruits.push("elderberry");
+// fruits[1] = "blueberry";
+// console.log(fruits);
 
-for (let i = 0; i < fruits.length; i++) {
-  console.log(fruits[i]);
+// for (let i = 0; i < fruits.length; i++) {
+//   console.log(fruits[i]);
+// }
+
+// 1/16++++++++++++++++++++++++++++++++++++++
+const ar = [1, 2, 3];
+const ray = [4, 5, 6];
+// for (let i = 0; i < ray.length; i++) {
+//   ar.push(ray[i]);
+// }
+// console.log(ar);
+console.log(ar.concat(ray));
+
+const sum = [];
+for (let j = 0; j < ar.length; j++) {
+  sum[j] = ar[j] + ray[j];
 }
+console.log(sum);
