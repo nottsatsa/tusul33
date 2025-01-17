@@ -506,16 +506,57 @@
 // }
 
 // 1/16++++++++++++++++++++++++++++++++++++++
-const ar = [1, 2, 3];
-const ray = [4, 5, 6];
-// for (let i = 0; i < ray.length; i++) {
-//   ar.push(ray[i]);
-// }
-// console.log(ar);
-console.log(ar.concat(ray));
+// const ar = [1, 2, 3];
+// const ray = [4, 5, 6];
+// console.log(ar.concat(ray));
 
-const sum = [];
-for (let j = 0; j < ar.length; j++) {
-  sum[j] = ar[j] + ray[j];
+// const sum = [];
+// for (let j = 0; j < ar.length; j++) {
+//   sum[j] = ar[j] + ray[j];
+// }
+// console.log(sum);
+
+// 1/17++++++++++++++++++++++++++++++++++++++
+// 1. print all elements
+const array = [2, 4, 7, 2, 2, 2, 2];
+let sum = 0;
+let large = 0,
+  even = 0,
+  odd = 0,
+  ray = array;
+for (let i = 0; i < array.length; i++) {
+  console.log(array[i]);
+  sum += array[i];
+  if (large <= array[i]) {
+    large = array[i];
+  }
+  if (array[i] % 2 == 0) {
+    even++;
+  }
 }
-console.log(sum);
+
+// 2. sum of all elements
+console.log(`2. sum of all elements = ${sum}`);
+
+// 3. find lagerst number
+console.log(`3. lagerst number = ${large}`);
+
+// 4. reverse of array
+console.log(`4. reverse of array ${array.reverse()}`);
+
+// 5. count odd even numbers
+console.log(`5. even : ${even}| odd : ${array.length - even}`);
+
+// 6. remove duplicates
+for (let i = 0; i < array.length; i++) {
+  for (let j = 1; j < array.length; j++) {
+    if (array[i] !== array[j]) {
+      array.shift();
+    }
+  }
+}
+console.log(`6. remove duplicates : ${array.reverse()}`);
+
+//7. find index of element
+let target = 2;
+console.log(`target = 2 --> element : ${ray[target]}`);
